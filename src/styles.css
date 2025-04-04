@@ -1,0 +1,30 @@
+@import "tailwindcss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  :root {
+    --bg--color: #080808;
+    --second--bg--color: #1a1a1a;
+    --text--color: white;
+    --main--color: rgb(86, 109, 172);
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background: var(--bg--color);
+    color: var(--text--color);
+    overflow-y: auto;
+  }
+  
