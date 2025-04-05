@@ -1,13 +1,15 @@
-<div class="w-[400px] h-[300px] bg-gray-400 flex flex-col rounded-md">
-    <div class="w-full h-[60%]">
-        <img [src]="urlImagen" alt="" class="object-cover w-full h-full" />
+<div class="w-[400px] h-[400px] bg-gray-700 flex flex-col rounded-lg sombra" >
+    <div class="w-full h-[50%] rounded-t-lg">
+        <img [src]="proyecto.urlImagen" alt="" class="object-cover w-full h-full rounded-t-lg" />
     </div>
-    <div>
-        <h2 class="font-bold text-3xl">{{nombreProyecto}}</h2>
-        <p>{{descripcionProyecto}}</p>
+    <div class="h-full flex flex-col justify-between p-5">
         <div>
-            <a [href]="urlGitHub"></a>
-            <a [href]="urlProyecto"></a>
+            <h2 class="font-bold text-4xl">{{proyecto.nombreProyecto}}</h2>
+            <p class="font-normal">{{proyecto.descripcionProyecto}}</p>
+        </div>
+        <div class="flex gap-2">
+            <a class="w-10 h-10 bg-[#566dac] p-1 rounded-full text-2xl items-center flex justify-center text-white hover:bg-white hover:text-[#566dac]" [href]="proyecto.urlGitHub"><i class='bx bxl-github'></i></a>
+            <a class="w-10 h-10 bg-[#566dac] p-1 rounded-full text-2xl flex items-center justify-center text-white hover:bg-white hover:text-[#566dac]" [href]="proyecto.urlProyecto"><i class='bx bx-link-alt'></i></a>
         </div>
     </div>
 </div>

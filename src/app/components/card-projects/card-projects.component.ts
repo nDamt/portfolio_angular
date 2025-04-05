@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-projects',
@@ -8,9 +8,18 @@ import { Component } from '@angular/core';
   styleUrl: './card-projects.component.css'
 })
 export class CardProjectsComponent {
-  nombreProyecto: string = "Proyecto Daniel";
-  descripcionProyecto: string = "Proyecto sencillo de Angular";
+  @Input() proyecto: any = {
+    nombreProyecto: "",
+    descripcionProyecto: "",
+    urlProyecto: "",
+    urlImagen:"",
+    urlGithub:""
+  }
+  /*
+  nombreProyecto: string = "";
+  descripcionProyecto: string = "";
   urlProyecto: string = "";
-  urlImagen: string = "https://i.pinimg.com/736x/7f/19/9e/7f199ea062f53e08577a0157e3a19c94.jpg";
+  urlImagen: string = "";
   urlGitHub: string = "";
+  */
 }
