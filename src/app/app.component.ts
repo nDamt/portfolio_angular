@@ -5,7 +5,7 @@ import { CardProjectsComponent } from "./components/card-projects/card-projects.
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CardProjectsComponent],
+  imports: [CardProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
